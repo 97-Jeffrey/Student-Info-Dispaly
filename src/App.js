@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import './App.css';
 import axios from 'axios';
 import Student from './component/Student'
+import average from './helper/average'
 
 function App() {
 
@@ -21,11 +22,8 @@ useEffect(()=>{
 
   
   const studentList = students.map(item=>{
-    let totalScore = 0;
-    for(const each of item.grades){
-      totalScore += parseInt(each);
-    }
-    let median = totalScore / item.grades.length;
+    
+    let median = average(item.grades);
    if(item.firstName.toLowerCase().includes(name) || item.lastName.toLowerCase().includes(name)){
     return(
       <Student 
