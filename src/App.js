@@ -16,17 +16,12 @@ useEffect(()=>{
 
     setStudent(response.data.students)
   })
-},[])
+},[]);
 
-
-
-
-  
   const studentList = students.map(item=>{
-    
     let median = average(item.grades);
-   if(item.firstName.toLowerCase().includes(name) || item.lastName.toLowerCase().includes(name)){
-    return(
+    if(item.firstName.toLowerCase().includes(name) || item.lastName.toLowerCase().includes(name)){
+    return (
       <Student 
         key = {item.id}
         item = {item}
@@ -45,16 +40,13 @@ useEffect(()=>{
       onChange = {e=>setName(e.target.value)}
       placeholder='Search by name'
     />
-
     <input
       id='add-tag-input'
       value={tag}
       onChange = {e=>setTag(e.target.value)}
       placeholder='Search by tags'
     />
-
       {studentList}
- 
     </div>
   );
 }
