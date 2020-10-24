@@ -5,9 +5,9 @@ import { Button} from 'react-bootstrap';
 function Student(props){
   const [open, setOpen] = useState(false);
   const [tags, setTags] = useState([]);
-  // const [value, setValue] = useState([]);
   const grades =props.item.grades;
-
+  const tagExist = tags.join('').includes(props.tag)
+  
   const onKeyDown = (e)=>{
     if(e.key === 'Enter'){
       let newVal = e.target.value;
@@ -32,7 +32,10 @@ function Student(props){
 
 
   return(
+    
     <>
+
+   {tagExist &&
     <div className='profile'>
       <div className='avatar'>
         <img src={props.item.pic} alt={props.item.firstName}></img>
@@ -64,12 +67,10 @@ function Student(props){
         onClick={() => setOpen(!open)}
       >+</Button>
       }
-
-    </div>
+    </div> 
+   }   
     </>
   )
-
 }
-
 
 export default Student

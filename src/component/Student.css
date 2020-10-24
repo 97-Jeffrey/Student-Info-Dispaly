@@ -1,8 +1,11 @@
+
+
 .profile{
   border-bottom: 1px solid rgb(202, 202, 202);
   display:flex;
   margin-bottom: 10px;
-  padding-bottom: 15px;;
+  padding-bottom: 15px;
+  /* display:none */
 }
 .info{
   margin-left:65px;

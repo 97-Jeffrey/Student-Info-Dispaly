@@ -6,6 +6,17 @@
   height:30px;
   margin-left:20px;
   margin-bottom: 20px;
+  margin-top:20px;
+}
+
+#add-tag-input{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(168, 168, 168);
+  width:95%;
+  height:30px;
+  margin-left:20px;
+  margin-bottom: 20px;
 }
 ::-webkit-input-placeholder { 
   color: grey;

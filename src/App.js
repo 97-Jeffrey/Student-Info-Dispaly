@@ -1,13 +1,14 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import axios from 'axios';
-import Student from './component/Student'
-import average from './helper/average'
+import Student from './component/Student';
+import average from './helper/average';
 
 function App() {
 
   const [students, setStudent] = useState([]);
   const [name, setName] = useState('');
+  const [tag, setTag] = useState('');
 
 useEffect(()=>{
   axios.get(`https://api.hatchways.io/assessment/students`)
@@ -17,7 +18,7 @@ useEffect(()=>{
   })
 },[])
 
-  console.log(students)
+
 
 
   
@@ -30,6 +31,7 @@ useEffect(()=>{
         key = {item.id}
         item = {item}
         median = {median}
+        tag={tag}
       />
     )
    }
@@ -42,6 +44,13 @@ useEffect(()=>{
       value={name}
       onChange = {e=>setName(e.target.value)}
       placeholder='Search by name'
+    />
+
+    <input
+      id='add-tag-input'
+      value={tag}
+      onChange = {e=>setTag(e.target.value)}
+      placeholder='Search by tags'
     />
 
       {studentList}
