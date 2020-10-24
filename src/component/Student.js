@@ -61,6 +61,7 @@ function Student(props){
         className='expand-btn'
         onClick={() => setOpen(!open)}
       >-</Button>}
+
       {!open &&
       <Button
         className='expand-btn'
