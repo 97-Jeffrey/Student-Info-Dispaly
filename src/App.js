@@ -12,7 +12,7 @@ function App() {
 useEffect(()=>{
   axios.get(`https://api.hatchways.io/assessment/students`)
   .then(response=>{
-    console.log(response)
+
     setStudent(response.data.students)
   })
 },[])
@@ -38,6 +38,7 @@ useEffect(()=>{
   return (
     <div>
     <input
+      id='name-input'
       value={name}
       onChange = {e=>setName(e.target.value)}
       placeholder='Search by name'
