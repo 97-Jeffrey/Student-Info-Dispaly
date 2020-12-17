@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 import Student from './component/Student';
 import average from './helper/average';
+import matchName from './helper/matchName';
 
 function App() {
 
@@ -20,7 +21,7 @@ useEffect(()=>{
 
   const studentList = students.map(student=>{
     let median = average(student.grades);
-    if(student.firstName.toLowerCase().includes(name) || student.lastName.toLowerCase().includes(name)){
+    if(matchName(student, name)){
     return (
       <Student 
         key = {student.id}
