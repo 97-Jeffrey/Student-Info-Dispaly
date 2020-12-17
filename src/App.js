@@ -18,13 +18,13 @@ useEffect(()=>{
   })
 },[]);
 
-  const studentList = students.map(item=>{
-    let median = average(item.grades);
-    if(item.firstName.toLowerCase().includes(name) || item.lastName.toLowerCase().includes(name)){
+  const studentList = students.map(student=>{
+    let median = average(student.grades);
+    if(student.firstName.toLowerCase().includes(name) || student.lastName.toLowerCase().includes(name)){
     return (
       <Student 
-        key = {item.id}
-        item = {item}
+        key = {student.id}
+        student = {student}
         median = {median}
         tag={tag}
       />
