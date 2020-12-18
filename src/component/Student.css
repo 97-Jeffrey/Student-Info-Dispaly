@@ -97,6 +97,9 @@
   background-color: #fff;
   border:1.3px solid rgb(252, 110, 58);
 }
+.remove-tags:focus{
+  outline:none;
+}
 
 
 #myProgress {
