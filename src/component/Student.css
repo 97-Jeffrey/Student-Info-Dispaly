@@ -83,6 +83,21 @@
   margin-left:12px;
 }
 
+.remove-tags{
+  border:none;
+  cursor: pointer;
+  margin-left:30px;
+  background-color: rgb(252, 110, 58);
+  color:#fff;
+  padding:5px;
+  border-radius: 10px;
+}
+.remove-tags:hover{
+  color:rgb(252, 110, 58);
+  background-color: #fff;
+  border:1.3px solid rgb(252, 110, 58);
+}
+
 
 #myProgress {
   width: 300px;
