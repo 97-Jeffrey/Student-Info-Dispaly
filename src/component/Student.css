@@ -27,6 +27,7 @@
 
 .grade{
   margin-left:20px;
+  display: flex;
 
   color:grey;
 }
@@ -80,4 +81,22 @@
 .all-tags{
   display:flex;
   margin-left:12px;
+}
+
+
+#myProgress {
+  width: 300px;
+  height:20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin-bottom:10px;
+}
+
+#myBar {
+  height: 20px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  border-radius: 10px;
 }
