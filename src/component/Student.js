@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import '../component/Student.css';
 import { Button } from 'react-bootstrap';
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+import switchColor from '../helper/switchColor';
+
 
 function Student(props){
   const [open, setOpen] = useState(false);
@@ -14,14 +15,6 @@ function Student(props){
       let newVal = e.target.value;
       e.target.value = '';
       setTags(prev=>[...prev, newVal]);
-    }
-  }
-
-  const switchColor = num =>{
-    if(num<80){
-      return 'rgb(248, 54, 54)';
-    }else if(num>=80 && num<90){
-      return 'rgb(252, 191, 79)'
     }
   }
   
