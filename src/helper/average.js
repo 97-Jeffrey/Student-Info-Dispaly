@@ -1,9 +1,9 @@
-function average(arr){
+function average(grades){
   let totalScore = 0;
-    for(const each of arr){
-      totalScore += parseInt(each);
+    for(const grade of grades){
+      totalScore += parseInt(grade);
     }
-    let median = totalScore / arr.length;
+    let median = totalScore / grades.length;
     return median
 }
 
