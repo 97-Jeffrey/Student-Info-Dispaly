@@ -14,7 +14,7 @@ function App() {
 useEffect(()=>{
   axios.get(`https://api.hatchways.io/assessment/students`)
   .then(response=>{
-
+    console.log(response);
     setStudent(response.data.students)
   })
 },[]);
