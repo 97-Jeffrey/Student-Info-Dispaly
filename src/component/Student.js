@@ -16,6 +16,14 @@ function Student(props){
       setTags(prev=>[...prev, newVal]);
     }
   }
+
+  const switchColor = num =>{
+    if(num<80){
+      return 'rgb(248, 54, 54)';
+    }else if(num>=80 && num<90){
+      return 'rgb(252, 191, 79)'
+    }
+  }
   
   const gradeList = grades.map(grade=>{
    return (
@@ -23,7 +31,7 @@ function Student(props){
         Test{grades.indexOf(grade)+1}: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
         <div id="myProgress">
-          <div id="myBar" style={{width:`${grade}%`}}>{grade}%</div>
+          <div id="myBar" style={{width:`${grade}%`, backgroundColor:switchColor(grade)}}>{grade}%</div>
         </div>
         
       </div>

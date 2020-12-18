@@ -94,9 +94,13 @@
 
 #myBar {
   height: 20px;
-  background-color: #4CAF50;
+  background-color: #07c40d;
   text-align: center;
   line-height: 20px;
   color: white;
   border-radius: 10px;
+}
+
+#test{
+ background-color:rgb(247, 178, 51);
 }
