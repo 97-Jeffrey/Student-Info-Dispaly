@@ -17,7 +17,7 @@ function Student(props){
       setTags(prev=>[...prev, newVal]);
     }
   }
-  
+
   const gradeList = grades.map(grade=>{
    return (
       <div className='grade' key={Math.random()}>
@@ -38,6 +38,8 @@ function Student(props){
       </div>
     )
   })
+
+  
 
 
   return (
@@ -63,7 +65,7 @@ function Student(props){
               {tagList}
             </div>
             <input className='add-tag-input' placeholder='Add a tag' onKeyDown={onKeyDown}></input>
-            <button className='remove-tags'>remove all tags</button>
+            <button className='remove-tags' onClick={()=>setTags([])}>remove all tags</button>
           </div>}
      
       </div>
