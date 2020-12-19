@@ -65,7 +65,7 @@ function Student(props){
               {tagList}
             </div>
             <input className='add-tag-input' placeholder='Add a tag' onKeyDown={onKeyDown}></input>
-            <button className='remove-tags' onClick={()=>setTags([])}>remove all tags</button>
+            {tags.length!==0 &&<button className='remove-tags' onClick={()=>setTags([])}>remove tags</button>}
           </div>}
      
       </div>
