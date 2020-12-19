@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import axios from 'axios';
+import Button from './component/Button';
 import Student from './component/Student';
 import average from './helper/average';
 import matchName from './helper/matchName';
@@ -47,6 +48,8 @@ useEffect(()=>{
       onChange = {e=>setTag(e.target.value)}
       placeholder='Search by tags'
     />
+    <Button text='rank by test1' className='sort-btn'/>
+    
       {studentList}
     </div>
   );

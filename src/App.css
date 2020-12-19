@@ -29,3 +29,21 @@ input:focus{
   border-color: #000;
 }
 
+
+.sort-btn{
+  border:none;
+  cursor: pointer;
+  margin-left:30px;
+  background-color: rgb(252, 110, 58);
+  color:#fff;
+  padding:5px;
+  border-radius: 10px;
+}
+.sort-btn:hover{
+  color:rgb(252, 110, 58);
+  background-color: #fff;
+  border:1.3px solid rgb(252, 110, 58);
+}
+.sort-btn:focus{
+  outline:none;
+}
