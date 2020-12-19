@@ -67,13 +67,15 @@ function Student(props){
             <input className='add-tag-input' placeholder='Add a tag' onKeyDown={onKeyDown}></input>
             {tags.length!==0 &&<button className='remove-tags' onClick={()=>setTags([])}>remove tags</button>}
           </div>}
-     
       </div>
-      {open && <Button className='expand-btn' onClick={() => setOpen(!open)}
-      > - </Button>}
 
-      {!open && <Button className='expand-btn' onClick={() => setOpen(!open)}
-      > + </Button>}
+      <div className='switch-btn'>
+        {open && <Button className='expand-btn' onClick={() => setOpen(!open)}
+        > - </Button>}
+
+        {!open && <Button className='expand-btn' onClick={() => setOpen(!open)}
+        > + </Button>}
+      </div>
     </div> 
     }   
     </>
