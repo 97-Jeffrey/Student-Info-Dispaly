@@ -11,6 +11,7 @@ function App() {
   const [students, setStudent] = useState([]);
   const [name, setName] = useState('');
   const [tag, setTag] = useState('');
+  // const [sort, setSort] = useState(false);
 
 useEffect(()=>{
   axios.get(`https://api.hatchways.io/assessment/students`)
