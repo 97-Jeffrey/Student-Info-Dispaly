@@ -2,9 +2,11 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import axios from 'axios';
 import Button from './component/Button';
+import SearchBar from './component/searchBar';
 import Student from './component/Student';
 import average from './helper/average';
 import matchName from './helper/matchName';
+
 
 function App() {
 
@@ -37,13 +39,13 @@ useEffect(()=>{
 
   return (
     <div>
-    <input
+    <SearchBar 
       id='name-input'
       value={name}
       onChange = {e=>setName(e.target.value)}
       placeholder='Search by name'
     />
-    <input
+    <SearchBar
       id='add-tag-input'
       value={tag}
       onChange = {e=>setTag(e.target.value)}
