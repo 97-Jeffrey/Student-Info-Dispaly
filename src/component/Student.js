@@ -5,10 +5,11 @@ import switchColor from '../helper/switchColor';
 
 
 function Student(props){
+  const { student, median, tag } =props;
+  const grades =student.grades;
   const [open, setOpen] = useState(false);
   const [tags, setTags] = useState([]);
-  const grades =props.student.grades;
-  const tagExist = tags.join('').includes(props.tag);
+  const tagExist = tags.join('').includes(tag);
   
   const onKeyDown = (e)=>{
     if(e.key === 'Enter'){
@@ -47,15 +48,15 @@ function Student(props){
    {tagExist &&
     <div className='profile'>
       <div className='avatar'>
-        <img src={props.student.pic} alt={props.student.firstName}></img>
+        <img src={student.pic} alt={student.firstName}></img>
       </div>
       <div className='info'>
-        <h1 className='name'>{props.student.firstName.toUpperCase()} {props.student.lastName.toUpperCase()}</h1>
-        <div className='email'>Email: {props.student.email}</div>
-        <div className='company'>Company: {props.student.company}</div>
-        <div className='city'>City: {props.student.city}</div>
-        <div className='skill'>Skill: {props.student.skill}</div>
-        <div className='average'>Average: {props.median}%</div>
+        <h1 className='name'>{student.firstName.toUpperCase()} {student.lastName.toUpperCase()}</h1>
+        <div className='email'>Email: {student.email}</div>
+        <div className='company'>Company: {student.company}</div>
+        <div className='city'>City: {student.city}</div>
+        <div className='skill'>Skill: {student.skill}</div>
+        <div className='average'>Average: {median}%</div>
         
       
         {open && 
