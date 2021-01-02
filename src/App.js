@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 import Students from './component/students';
-import Button from './component/Button';
 import SearchBar from './component/searchBar';
 
 
