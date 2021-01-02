@@ -26,7 +26,6 @@ function App() {
       onChange = {e=>setTag(e.target.value)}
       placeholder='Search by tags'
     />
-    <Button text='rank by test1' className='sort-btn'/>
     
     <Students 
       name={name} 
