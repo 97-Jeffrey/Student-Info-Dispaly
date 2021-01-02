@@ -3,8 +3,8 @@ function average(grades){
     for(const grade of grades){
       totalScore += parseInt(grade);
     }
-    let median = totalScore / grades.length;
-    return median
+    return totalScore / grades.length;
+    
 }
 
 module.exports = average;
