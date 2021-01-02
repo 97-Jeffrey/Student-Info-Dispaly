@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
-import '../component/Student.css';
 import { Button } from 'react-bootstrap';
 import switchColor from '../helper/switchColor';
-
+import '../component/Student.css';
 
 function Student(props){
   const { student, median, tag } =props;

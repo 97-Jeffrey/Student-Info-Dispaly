@@ -1,41 +1,16 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import axios from 'axios';
+import Students from './component/students';
 import Button from './component/Button';
 import SearchBar from './component/searchBar';
-import Student from './component/Student';
-import average from './helper/average';
-import matchName from './helper/matchName';
+
+
 
 
 function App() {
 
-  const [students, setStudent] = useState([]);
   const [name, setName] = useState('');
   const [tag, setTag] = useState('');
-  // const [sort, setSort] = useState(false);
-
-useEffect(()=>{
-  axios.get(`https://api.hatchways.io/assessment/students`)
-  .then(response=>{
-    console.log(response);
-    setStudent(response.data.students)
-  })
-},[]);
-
-  const studentList = students.map(student=>{
-    let median = average(student.grades);
-    if(matchName(student, name)){
-    return (
-      <Student 
-        key = {student.id}
-        student = {student}
-        median = {median}
-        tag={tag}
-      />
-    )
-   }
-  })
 
   return (
     <div>
@@ -53,7 +28,10 @@ useEffect(()=>{
     />
     <Button text='rank by test1' className='sort-btn'/>
     
-      {studentList}
+    <Students 
+      name={name} 
+      tag={tag}
+    />
     </div>
   );
 }
