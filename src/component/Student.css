@@ -36,18 +36,9 @@
 }
 
 .expand-btn{
-  height:30px;
   margin-right:100px;
   position:absolute;
   right:0;
-  border:none;
-  outline:none;
-  color: grey;
-  width:20px;
-  font-weight: bolder;
-  font-size:80px;
-  background-color: transparent;
-
 }
 
 .expand-btn:hover{
@@ -87,14 +78,15 @@
   border:none;
   cursor: pointer;
   margin-left:30px;
-  background-color: rgb(252, 110, 58);
-  color:#fff;
+  border:1px solid rgb(252, 110, 58);
+  background-color: white;
+  color: rgb(252,110,58);
   padding:5px;
   border-radius: 10px;
 }
 .remove-tags:hover{
-  color:rgb(252, 110, 58);
-  background-color: #fff;
+  color:#fff;
+  background-color:  rgb(252, 110, 58);
   border:1.3px solid rgb(252, 110, 58);
 }
 .remove-tags:focus{
