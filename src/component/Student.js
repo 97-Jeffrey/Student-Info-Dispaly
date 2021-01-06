@@ -18,6 +18,8 @@ function Student(props){
     }
   }
 
+ 
+
   const gradeList = grades.map((grade, index)=>{
    return (
       <div className='grade' key={index}>
@@ -33,7 +35,10 @@ function Student(props){
 
   const tagList = tags.map((tag, index) =>{
     return (
-      <div className='each-tag' key={index}>
+      <div 
+        className='each-tag' 
+        key={index}
+      >
         {tag}
       </div>
     )
