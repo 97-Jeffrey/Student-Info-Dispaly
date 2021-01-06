@@ -10,7 +10,7 @@ function Student(props){
   const [tags, setTags] = useState([]);
   const tagExist = tags.join('').includes(tag);
   
-  const onKeyDown = (e)=>{
+  const onKeyDown = e =>{
     if(e.key === 'Enter'){
       let newVal = e.target.value;
       e.target.value = '';
@@ -31,10 +31,10 @@ function Student(props){
      )
   })
 
-  const tagList = tags.map((eachTag, index) =>{
+  const tagList = tags.map((tag, index) =>{
     return (
       <div className='each-tag' key={index}>
-        {eachTag}
+        {tag}
       </div>
     )
   })
