@@ -18,9 +18,9 @@ function Student(props){
     }
   }
 
-  const gradeList = grades.map(grade=>{
+  const gradeList = grades.map((grade, index)=>{
    return (
-      <div className='grade' key={Math.random()}>
+      <div className='grade' key={index}>
         Test{grades.indexOf(grade)+1}: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
         <div id="myProgress">
@@ -31,9 +31,9 @@ function Student(props){
      )
   })
 
-  const tagList = tags.map(eachTag =>{
+  const tagList = tags.map((eachTag, index) =>{
     return (
-      <div className='each-tag' key={Math.random()}>
+      <div className='each-tag' key={index}>
         {eachTag}
       </div>
     )

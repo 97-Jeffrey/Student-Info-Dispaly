@@ -21,7 +21,7 @@ function App() {
     <Button
       className="btn btn-outline-primary m-2"
       onClick={notify}
-      text='Customize student tag'/>
+      text='Important'/>
     <ToastContainer />
     <SearchBar 
       id='name-input'
