@@ -1,4 +1,4 @@
-function average(grades){
+export default function average(grades){
   let totalScore = 0;
     for(const grade of grades){
       totalScore += parseInt(grade);
@@ -7,4 +7,3 @@ function average(grades){
     
 }
 
-module.exports = average;

@@ -8,4 +8,4 @@ const matchName = function(person, name){
   return lastNameFilter || firstNameFilter || fullNameFilter? true:false;
 
 }
-module.exports = matchName;
+export default matchName;
