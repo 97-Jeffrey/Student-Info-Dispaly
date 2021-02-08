@@ -2,6 +2,10 @@
 
 A SPA, responsive react app that renders a list of students, user can search students by names, or created tags.
 
+## use the app:
+
+You can open the app in [Heroku](https://info-display.herokuapp.com/) or follow instruction below `ScreenShots` section.
+
 ## ScreenShots:
 
 The main page:
