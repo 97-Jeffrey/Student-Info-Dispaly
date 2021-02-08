@@ -2,6 +2,23 @@
 
 A SPA, responsive react app that renders a list of students, user can search students by names, or created tags.
 
+## ScreenShots:
+
+The main page:
+![](https://github.com/97-Jeffrey/Student-Info-Display/blob/master/doc/Screen%20Shot%202021-02-07%20at%2011.08.00%20PM.png?raw=true)
+
+Details of individual students:
+![](https://github.com/97-Jeffrey/Student-Info-Display/blob/master/doc/Screen%20Shot%202021-02-07%20at%2011.08.37%20PM.png?raw=true)
+
+User can search students by their names:
+![](https://github.com/97-Jeffrey/Student-Info-Display/blob/master/doc/Screen%20Shot%202021-02-07%20at%2011.10.29%20PM.png?raw=true)
+
+Or add tag(s) for individual student:
+![](https://github.com/97-Jeffrey/Student-Info-Display/blob/master/doc/Screen%20Shot%202021-02-07%20at%2011.11.57%20PM.png?raw=true)
+
+And search students by tags:
+![](https://github.com/97-Jeffrey/Student-Info-Display/blob/master/doc/Screen%20Shot%202021-02-07%20at%2011.12.29%20PM.png?raw=true)
+
 ## Available Scripts
 
 In the project directory, you can run:
