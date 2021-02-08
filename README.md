@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Students display:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A SPA, responsive react app that renders a list of students, user can search students by names, or created tags.
 
 ## Available Scripts
 
