@@ -1,4 +1,4 @@
-# Students display:
+# Students info display:
 
 A SPA, responsive react app that renders a list of students, user can search students by names, or created tags.
 
